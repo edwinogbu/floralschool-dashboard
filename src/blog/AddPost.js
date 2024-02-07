@@ -50,6 +50,9 @@ export default function AddPost() {
         navigate('/');
       });
     } catch (error) {
+      console.error('Error:', error);
+      console.error('Response:', error.response);  // Log the response for more details
+  
       Swal.fire({
         icon: 'error',
         title: 'Error',

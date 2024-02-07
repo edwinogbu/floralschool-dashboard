@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap');
+
+:root{
+    --darkBlue_1: #4e73df;
+    --darkBlue_2: #2f4ae6;
+    --darkBlue_3: #0A0F19;
+    --darkBlue_4: #4e73df;
+    --mediumSlateBlue: #6C62E2;
+    --lightBlue_1: #F3F1FE;
+    --lightBlue_2: #4e73df;
+    --white: #FFF;
+    --black: #000000;
+  }
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    /* width: 100%;
+    height: 100%; */
+    /* background-color: rgb(204, 199, 199);
+    display: flex;
+    flex-direction: column;
+    align-items: center; */
+}
+
+.result-sheet{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fafafa;
+    margin-top: 50px;
+    gap: 30px;
+}
+
+.result-sheet table{
+    border: solid var(--mediumSlateBlue);
+}
+
+.result-sheet table th{
+    background-color: var(--lightBlue_2);
+    font-size: 15px;
+}
+
+.result-sheet table tr td{
+    font-size: 14px;
+    padding-left: 5px;
+}
+
+.result-sheet .header{
+    width: 95%;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    border: solid 2px var(--mediumSlateBlue);
+    background-color: var(--lightBlue_2);
+    margin-top: 30px;
+    padding-left: 20px;
+    gap: 30px;
+}
+
+.result-sheet .header .logo{
+    width: 15%;
+    height: 95%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.result-sheet .header .logo img{
+    width: 100%;
+    height: 100%;
+}
+
+.result-sheet .header .school-name{
+    width: 80%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.result-sheet .header .school-name h1{
+    font-size: 25px;
+}
+
+.result-sheet .header .school-name p{
+    font-size: 17px;
+}
+
+.result-sheet .first-term-wrapper{
+    width: 95%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.result-sheet .first-term-wrapper h2{
+    font-size: 22px;
+}
+
+.result-sheet .first-term-wrapper .first-term-tables{
+    width: 100%;
+    height: 97%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.result-sheet .first-term-wrapper .first-term-tables .personal-data{
+    width: 35%;
+    height: 95%;
+}
+
+.result-sheet .first-term-wrapper .first-term-tables .passport{
+    width: 12%;
+    height: 55%;
+}
+
+.result-sheet .first-term-wrapper .first-term-tables .passport img{
+    width: 100%;
+    height: 100%;
+}
+
+.result-sheet .first-term-wrapper .first-term-tables .attendance-duration{
+    width: 35%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.result-sheet .first-term-wrapper .first-term-tables .attendance-duration .attendance{
+    width: 100%;
+    height: 48%;
+}
+
+.result-sheet .first-term-wrapper .first-term-tables .attendance-duration .duration{
+    width: 100%;
+    height: 48%;
+}
+
+.result-sheet .first-term-wrapper .first-term-tables .total-position{
+    width: 20%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.result-sheet .first-term-wrapper .first-term-tables .total-position .total{
+    width: 100%;
+    height: 69%;
+}
+
+.result-sheet .first-term-wrapper .first-term-tables .total-position th{
+    background-color: transparent;
+}
+
+.result-sheet .first-term-wrapper .first-term-tables .total-position .position{
+    width: 100%;
+    height: 27%;
+}
+
+.result-sheet .academic-performance-table{
+    width: 95%;
+}
+
+.result-sheet .academic-performance-table .subject th{
+    background-color: transparent;
+}
+
+.result-sheet .academic-performance-table .subject .subject-heading{
+    font-size: 35px;
+}
+
+.result-sheet .academic-performance-rating-keys{
+    width: 95%;
+}
+
+.result-sheet .affective-psychomotor-wrapper{
+    width: 95%;
+    height: 97%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.result-sheet .affective-psychomotor-wrapper .affective-traits-table{
+    width: 50%;
+    height: 97%;
+}
+
+.result-sheet .affective-psychomotor-wrapper .psychomotor-skills{
+    width: 47%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.result-sheet .affective-psychomotor-wrapper .psychomotor-skills .psychomotor-table{
+    width: 100%;
+    height: 40%;
+}
+
+.result-sheet .affective-psychomotor-wrapper .psychomotor-skills .psychomotor-rating-keys{
+    width: 50%;
+    height: 40%;
+}
+
+.result-sheet .teacher-headTeacher-comment{
+    width: 95%;
+    height: 350px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid var(--mediumSlateBlue);
+    gap: 10px;
+}
+
+.result-sheet .teacher-headTeacher-comment .comment-wrapper{
+    width: 85%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 30px;
+    border: 2px solid var(--mediumSlateBlue);
+    font-size: 15px;
+}
+
+.result-sheet .teacher-headTeacher-comment .comment-wrapper .comment{
+    width: 100%;
+    height: 47%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    border-top: 2px solid var(--mediumSlateBlue);
+    gap: 30px;
+}
+
+.result-sheet .teacher-headTeacher-comment .comment-wrapper .comment .signature-date{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 200px;
+}
+
+.result-sheet .teacher-headTeacher-comment .stamp{
+    width: 15%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
